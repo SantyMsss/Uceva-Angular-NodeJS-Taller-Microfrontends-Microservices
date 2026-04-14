@@ -52,6 +52,23 @@ export const routes: Routes = [
     },
 
   /**
+   * Ruta de pedidos.
+   *
+   * @remarks
+   * Renderiza el componente `OrdersPage`, encargado
+   * de mostrar y gestionar el listado de pedidos.
+   */
+  {
+    path: 'orders',
+    loadComponent: () =>
+      loadRemoteModule({
+        type: 'module',
+        remoteEntry: 'http://localhost:4203/remoteEntry.js',
+        exposedModule: './OrdersPage',
+      }).then(m => m.OrdersPage),
+  },
+
+  /**
    * Ruta comodín.
    *
    * @remarks
