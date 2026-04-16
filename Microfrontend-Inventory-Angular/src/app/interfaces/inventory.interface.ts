@@ -13,7 +13,8 @@
  * ```ts
  * const inventario: Inventory = {
  *   id: 1,
- *   productId: 1,
+ *  productId: 1,
+ *  productName: 'Portatil Dell XPS 13',
  *  quantity: 100,
  *  movements: 'entrada',
  *  lastUpdated: new Date('2024-06-01T12:00:00Z')
@@ -25,6 +26,8 @@ export interface Inventory {
     id: number;
     /** Identificador del producto al que pertenece el inventario */
     productId: number;
+    /** Nombre del producto */
+    productName: string;
     /** Cantidad disponible del producto */
     quantity: number;
     /** Tipo de movimiento del inventario */

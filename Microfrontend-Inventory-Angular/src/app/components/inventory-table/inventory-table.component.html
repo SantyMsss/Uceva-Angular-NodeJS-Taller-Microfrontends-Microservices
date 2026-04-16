@@ -2,6 +2,7 @@
 	<thead>
 		<tr>
 			<th scope="col">Id</th>
+			<th scope="col">IdProducto</th>
 			<th scope="col">Producto</th>
 			<th scope="col">Stock disponible</th>
 			<th scope="col">Movimiento</th>
@@ -13,6 +14,7 @@
 			<tr>
 				<th scope="row">{{ inventory.id }}</th>
 				<td>{{ inventory.productId }}</td>
+				<td>{{ inventory.productName }}</td>
                 <td>{{ inventory.quantity }}</td>
 				<td>
 					<dsb-badge-atom

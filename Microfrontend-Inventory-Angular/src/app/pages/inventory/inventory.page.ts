@@ -49,6 +49,8 @@ private inventoryService = inject(InventoryService);
  * Se suscribe al método `getInventory()` del servicio y
  * asigna los datos recibidos a la propiedad `inventory`.
  */
+
+/** 
 ngOnInit(): void {
   this.state = 'loading';
    this.inventoryService.getInventory(10).subscribe({ 
@@ -62,5 +64,5 @@ ngOnInit(): void {
      }
    });
  }
-
+*/
 }
