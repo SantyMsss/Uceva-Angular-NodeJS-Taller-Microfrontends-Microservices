@@ -15,7 +15,7 @@
  *   id: 1,
  *   productId: 1,
  *  quantity: 100,
- *  movimientos: 'entrada',
+ *  movements: 'entrada',
  *  lastUpdated: new Date('2024-06-01T12:00:00Z')
  * };
  * ```
@@ -28,7 +28,7 @@ export interface Inventory {
     /** Cantidad disponible del producto */
     quantity: number;
     /** Tipo de movimiento del inventario */
-    movimientos: InventoryMovement;
+    movements: InventoryMovement;
 
     /** Última fecha de actualización del inventario */
     lastUpdated: Date;

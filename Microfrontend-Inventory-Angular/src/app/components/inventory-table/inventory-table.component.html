@@ -1,1 +1,27 @@
-<p>inventory-table.component works!</p>
+<table class="table table-striped border">
+	<thead>
+		<tr>
+			<th scope="col">Id</th>
+			<th scope="col">Producto</th>
+			<th scope="col">Stock disponible</th>
+			<th scope="col">Movimiento</th>
+            <th scope="col">Fecha</th>
+		</tr>
+	</thead>
+	<tbody>
+		@for (inventory of inventory; track inventory) {
+			<tr>
+				<th scope="row">{{ inventory.id }}</th>
+				<td>{{ inventory.productId }}</td>
+                <td>{{ inventory.quantity }}</td>
+				<td>
+					<dsb-badge-atom
+						[text]="inventory.movements"
+						[type]="inventoryMap[inventory.movements]" >
+                    </dsb-badge-atom>
+				</td>
+                <td>{{ inventory.lastUpdated | date }}</td>
+			</tr>
+		}
+	</tbody>
+</table>
