@@ -1,5 +1,24 @@
 import { Inventory } from "../interfaces/inventory.interface";
-
+/**
+ * Datos de inventario de ejemplo para pruebas y desarrollo.
+ * Estos datos se utilizan para simular la respuesta de la API REST
+ * y permitir el desarrollo de la interfaz de usuario sin depender
+ * de un backend real.
+ * 
+ * Cada objeto en el array representa un registro de inventario con
+ * información como el id, productId, productName, quantity, movements y lastUpdated.
+ * 
+ * @remarks
+ * Estos datos son estáticos y no cambian durante la ejecución de la aplicación.
+ * Se recomienda utilizarlos solo para propósitos de desarrollo y pruebas, y no deben
+ * ser utilizados en producción.
+ * 
+ * @example
+ * ```ts
+ * import { INVENTORY_MOCK } from './inventary.mocks';
+ * console.log(INVENTORY_MOCK);
+ * ```
+ */
 export const INVENTORY_MOCK: Inventory[] = [
     {
         id: 1,

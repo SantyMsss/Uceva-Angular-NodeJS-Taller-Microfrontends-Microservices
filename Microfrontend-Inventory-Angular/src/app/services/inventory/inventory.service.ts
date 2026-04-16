@@ -29,7 +29,7 @@ export class InventoryService {
   private httpClient = inject(HttpClient);
   
 
-  getAllInventory(countInventory: number) : Observable<Inventory[]> { 
-    return this.httpClient.get(`http://localhost:3004/api/inventory/${countInventory}`);
-  }
+  //getAllInventory(countInventory: number) : Observable<Inventory[]> { 
+   // return this.httpClient.get(`http://localhost:3004/api/inventory/${countInventory}`);
+  //}
 }
