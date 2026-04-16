@@ -2,39 +2,39 @@
  * @openapi
  * components:
  *   schemas:
- *     Product:
+ *     Inventory:
  *       type: object
  *       description: Representa un inventario del sistema
  *       required:
  *         - id
- *         - id del producto
- *         - name del producto
- *         - cantidad disponible
- *         - movimiento del inventario
- *         - fecha de última actualización
+ *         - productId
+ *         - productName
+ *         - quantity
+ *         - movements
+ *         - lastUpdated
  *       properties:
  *         id:
  *           type: number
  *           example: 1
- *         id del producto:
+ *         productId:
  *           type: number
  *           example: 1
- *         name del producto:
+ *         productName:
  *           type: string
- *           example: portatil Dell XPS 13
- *         cantidad disponible:
+ *           example: Portatil Dell XPS 13
+ *         quantity:
  *           type: number
  *           example: 100
- *         movimiento del inventario:
+ *         movements:
  *           type: string
  *           enum:
  *             - entrada
  *             - salida
  *             - ajuste
- *          example: entrada
- *        fecha de última actualización:
- *          type: string
- *         format: date-time
- *        example: 2024-06-01T12:00:00Z
+ *           example: entrada
+ *         lastUpdated:
+ *           type: string
+ *           format: date-time
+ *           example: 2024-06-01T12:00:00Z
  */
 export {};

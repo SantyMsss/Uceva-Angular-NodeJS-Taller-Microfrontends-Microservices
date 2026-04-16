@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { ProductsRoutes } from "./modules/products/products.routes";
+import { InventoryRoutes } from "./modules/inventorys/inventorys.routes";
 
 /**
  * Clase encargada de centralizar todas las rutas de la aplicación.
@@ -28,7 +28,7 @@ export class AppRoutes {
     const router = Router();
 
     // Definir rutas
-    //router.use("/api/inventory", InventorysRoutes.routes);
+    router.use("/api/inventory", InventoryRoutes.routes);
 
     return router;
   }
