@@ -28,7 +28,7 @@ export class AppRoutes {
     const router = Router();
 
     // Definir rutas
-    router.use("/api/products", ProductsRoutes.routes);
+    //router.use("/api/inventory", InventorysRoutes.routes);
 
     return router;
   }
