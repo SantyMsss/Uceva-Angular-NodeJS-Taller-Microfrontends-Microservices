@@ -67,6 +67,22 @@ export const routes: Routes = [
         exposedModule: './OrdersPage',
       }).then(m => m.OrdersPage),
   },
+  /**
+   * Ruta de inventario.
+   * 
+   * @remarks
+   * Renderiza el componente `InventoryPage`, encargado
+   * de mostrar y gestionar el listado de productos en el inventario.
+   */
+  {
+    path: 'inventory',
+    loadComponent: () =>
+      loadRemoteModule({
+        type: 'module',
+        remoteEntry: 'http://localhost:4204/remoteEntry.js',
+        exposedModule: './InventoryPage',
+      }).then(m => m.InventoryPage),
+  },
 
   /**
    * Ruta comodín.
