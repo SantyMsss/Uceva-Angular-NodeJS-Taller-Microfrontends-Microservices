@@ -23,5 +23,11 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.scss'
 })
 export class App {
+  /**
+   * Título de la aplicación, utilizado en el navbar y otras partes del layout.
+   * Se define como una señal para permitir reactividad en caso de cambios futuros.
+   * Actualmente, el título es estático, pero se ha implementado como una señal
+   * para facilitar su actualización dinámica si se requiere en el futuro.
+   */
   protected readonly title = signal('mf-Inventory');
 }
