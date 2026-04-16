@@ -29,7 +29,13 @@ export class InventoryService {
   private httpClient = inject(HttpClient);
   
 
-  //getAllInventory(countInventory: number) : Observable<Inventory[]> { 
-   // return this.httpClient.get(`http://localhost:3004/api/inventory/${countInventory}`);
-  //}
+  /**
+   * Obtiene una lista de inventarios según la cantidad solicitada.
+   *
+   * @param countInventory Cantidad de inventarios a obtener
+   * @returns Observable con la lista de inventarios
+   */
+  getAllInventory(countInventory: number): Observable<Inventory[]> {
+    return this.httpClient.get<Inventory[]>(`http://localhost:3004/api/inventory/${countInventory}`);
+  }
 }
